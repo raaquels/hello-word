@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteiner{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left, #000000, #0c0c55, #270e27);
+    background-size: 500% 100%;
+    animation: degrade 5s infinite alternate;
+}
+
+.conteiner h1{
+    font-size: 3rem;
+    background-image: linear-gradient(to right, rgb(202, 244, 110), rgb(222, 106, 203), rgb(88, 179, 197));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@keyframes degrade{
+    0%{
+        background-position-x: 0%;
+    }
+
+    100%{
+        background-position-x: 100%;
+    }
+}
